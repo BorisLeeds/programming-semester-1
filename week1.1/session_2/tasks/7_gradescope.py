@@ -5,7 +5,12 @@
 # Ask a user to enter two numbers (one per input)
 
 # multiply those numbers together
-
+try:
+    x = int(input("enter a number: "))
+    y= int(input("enter a number: "))
+    print(x*y)
+except:
+    print("You did not enter a number")
 # print out the result
 
 # There is an extra point available for validating that they entered numbers!
