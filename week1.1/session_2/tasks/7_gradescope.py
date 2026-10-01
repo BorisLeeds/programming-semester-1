@@ -10,7 +10,7 @@ try:
     y= int(input("enter a number: "))
     print(x*y)
 except:
-    print("You did not enter a number")
+    print("That is not a number")
 # print out the result
 
 # There is an extra point available for validating that they entered numbers!
