@@ -22,5 +22,5 @@ print(f"you would have saved {num*12}")
 # print this out in the format £X.XX (to two decimal places).
 total = int((num*1200)*1.008)
 total = total/100
-print(f"£{total}")
+print(f"£{total:.2f}")
 
