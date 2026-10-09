@@ -12,3 +12,10 @@ denominator_input = input("Enter the denominator: ")
 # TODO: convert the values to integers and perform the division
 # TODO: print clear feedback when something goes wrong
 # TODO: only show the answer when the division succeeds
+try:
+    numerator = int(numerator_input)
+    denominator = int(denominator_input)
+    ans = numerator/denominator
+    print(f"the answer is {ans}")
+except:
+    print("u either entered non numbers or ur tryna divide by 0")

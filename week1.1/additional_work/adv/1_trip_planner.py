@@ -14,3 +14,12 @@ time_hours_input = input("How many hours will the journey take? ")
 # TODO: calculate the average speed in miles per hour
 # TODO: print a summary message using an f-string
 # Extension: add validation for zero or negative values
+try:
+    distance_miles_input = int(distance_miles_input)
+    time_hours_input = int(time_hours_input)
+except:
+    print("u didnt enter numbers")
+if distance_miles_input/time_hours_input >0:
+    print(f"The average speed is {distance_miles_input/time_hours_input}")
+else:
+    print("warning number is 0 or negative")
