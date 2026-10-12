@@ -8,5 +8,6 @@ while fruit:
 
 
 # Why does this work?
-
+#because there are items in fruit making it true
 # What features of Python does it rely on?
+#bolean logic
