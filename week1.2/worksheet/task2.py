@@ -12,10 +12,11 @@ try:
         middle=0
     
     if len(list1)%2 != 0:
-        mid = list1[middle]
+        mid = list1[int(middle)]
     else:
         x = int(middle)
         y= x+1
+        print(x,y)
         mid = (list1[x] + list1[y]) / 2
     print(f"Median = {mid}")
 except:
