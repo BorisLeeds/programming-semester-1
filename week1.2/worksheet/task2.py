@@ -2,9 +2,12 @@
 from util import read_numbers
 list1 = read_numbers()
 list1.sort()
-print(f"minimum = {min(list1)}")
-print(f"maximum = {max(list1)}")
-print(f"mean = {sum(list1)/len(list1)}")
+try:
+    print(f"Minimum = {min(list1)}")
+    print(f"Maximum = {max(list1)}")
+    print(f"Mean = {sum(list1)/len(list1)}")
+except:
+    print("Error: no numbers provided")
 try:
     middle= (len(list1)-1)/2
 except:
@@ -16,4 +19,4 @@ else:
     x = int(middle)
     y= x+1
     mid = (list1[x] + list1[y]) / 2
-print(f"median = {mid}")
+print(f"Median = {mid}")
