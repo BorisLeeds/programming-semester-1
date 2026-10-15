@@ -7,7 +7,7 @@ except:
 if score < 0 or score > 100:
     sys.exit("Error: Grade must be an integer between 0 and 100")
 elif score < 40:
-    print(f"{score} is a fail")
+    print(f"{score} is a Fail")
 elif score < 70:
     print(f"{score} is a Pass")
 else:
