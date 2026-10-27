@@ -4,14 +4,31 @@ By submitting this code you are declaring that all work in this file, other than
 Name: 
 """
 
-states = { "red":4, "red_amber":3, "green":5, "amber":3 }
+states = { "red":4,
+            "red_amber":3, 
+            "green":5, 
+            "amber":3 }
 
 systime = 0
 maxtime = int(input())  # read an integer number of steps (>0)
-
+temp=0
 state = "red"
-
-print(f"Time {systime:03} State {state}")
+while systime <= maxtime:
+    temp+=1
+    if temp > states.get(state):
+        temp=1
+        if state =="red":
+            state= "red_amber"
+        elif state =="red_amber":
+            state= "green"
+        elif state == "green":
+            state= "amber"
+        else:
+            state="red"
+    print(f"Time {systime:03} State {state}")
+    systime+=1
+    
+#print(f"Time {systime:03} State {state}")
 
 # Simulate the traffic light system up to time=maxtime in 1-second steps
 
