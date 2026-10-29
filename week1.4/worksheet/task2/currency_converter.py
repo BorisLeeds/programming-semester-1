@@ -6,7 +6,7 @@
     other than any provided template code, was written and developed by
     you independently.
 
-    Name:
+    Name: Boris Tchakarski
 """
 
 def currency_converter(amount, from_currency, to_currency):
@@ -19,9 +19,17 @@ def currency_converter(amount, from_currency, to_currency):
     }
 
     # your code here
-
-    return None
-
+    num1 = conversion_rate.get(from_currency)
+    num2 = num1.get(to_currency)
+    num = amount * num2
+    if num < 0:
+        num=0
+    num= round(num, 2)
+    return num
+#x = float(input("enter a num: "))
+#y= input("code from ")
+#z= input("code to ")
+#print(currency_converter(x,y,z))
 # Submit only this file currency_converter.py with the completed function.
 
 # Remove any additional code you may have added during development and testing.

@@ -21,7 +21,10 @@ class Point:
         """
         Returns distance of this Point from the origin.
         """
-        return math.hypot(self.x, self.y)
+        if isinstance(self.x, int) and isinstance(self.y, int):
+            return math.hypot(self.x, self.y)
+        else:
+            return "wrong type"
 
     def distance_to(self, p):
         """

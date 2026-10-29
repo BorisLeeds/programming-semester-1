@@ -10,14 +10,14 @@ class Point:
     A point in 2D space.
     """
 
-    def __init__(self, x, y):
+    def __init__(self, x: int, y: int):
         """
         Creates a Point, given x & y coordinates.
         """
         self.x = x
         self.y = y
 
-    def distance(self):
+    def distance(self) -> int:
         """
         Returns distance of this Point from the origin.
         """
