@@ -1,5 +1,5 @@
 import pandas
-
+import math
 data = pandas.read_csv("lifestyle_data.csv")
 
 # What data type is `data` as output from the `read_csv()` method?
@@ -10,9 +10,9 @@ data = pandas.read_csv("lifestyle_data.csv")
 # - Leave your code under the comments.
 
 # Find the total number of students
-
+print(len(data))
 # Find the mean average GPA of the students
-
+print(math.mean())
 # Find the standard deviation of how much sleep students get per day
 
 # Find the maximum amount of study hours per day

@@ -14,11 +14,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import random
 
+ramendata = pd.read_csv("ramen-ratings.csv")
+
 
 def show_histogram_of_ramen_scores(data):
     '''
     Create a histogram to show the distribution of numbers of stars given to ramen.
     '''
+    scores = data.groupby("Stars")
+    scores.plot(kind="hist")
     pass
 
 def show_bar_chart_stars_per_manufacturer(data):
