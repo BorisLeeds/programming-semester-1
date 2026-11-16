@@ -7,5 +7,5 @@ Hint: consider both positive and negative integers
 | list data | Values |
 | --- | --- |
 | Empty list | |
-| Single integer list  | |
-| Multiple integer list |  |
+| Single integer list  | 2|
+| Multiple integer list | 3,4,5,6 |

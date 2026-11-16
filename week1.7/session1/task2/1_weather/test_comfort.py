@@ -3,15 +3,15 @@
 # Fill in the blank spaces in the calls to comfort_level() below, using
 # the values you've chosen for testing the function
 
-# Then write a test_ok() function that tests the other equivalence class
+# Then write a test_ok() function that tests the other equivalence classw
 
 from weather import comfort_level
 
 def test_cold():
-    assert comfort_level(    ) == "COLD"
-    assert comfort_level(    ) == "COLD"
+    assert comfort_level(15) == "COLD"
+    assert comfort_level(12) == "COLD"
 
 def test_hot():
-    assert comfort_level(    ) == "HOT"
-    assert comfort_level(    ) == "HOT"
+    assert comfort_level(30) == "HOT"
+    assert comfort_level(25.1) == "HOT"
     
