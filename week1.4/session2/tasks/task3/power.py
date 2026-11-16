@@ -7,7 +7,11 @@
 def power(x, n):
     # complete your code here
     # base case
-
+    if n == 0:
+        return 1
+    if n < 0:
+        return 1 / power(x, -n)
+    return x * power(x, n - 1)
     # recursive case
 
 

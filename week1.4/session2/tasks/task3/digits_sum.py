@@ -19,7 +19,9 @@ def digits_sum(number):
     """
     # complete your code here
     # base case
-
+    if number < 10:
+        return number
+    return (number % 10) + digits_sum(number // 10)
     # recursive case
 
 

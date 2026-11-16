@@ -18,7 +18,12 @@ def odd_even(lstIntegers):
     """
 
     # Complete your code here
-
+    for num in lstIntegers:
+        if num % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+    return [odd_count, even_count]
 
 # Check if correct output is produced
 print(odd_even([1, 2, 3, 4, 5]))  # Output: [3, 2]

@@ -23,7 +23,7 @@ class Point:
         """
         return math.hypot(self.x, self.y)
 
-    def distance_to(self, p):
+    def distance_to(self, p) -> float:
         """
         Returns distance of this Point from the specified Point.
         """

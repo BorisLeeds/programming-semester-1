@@ -2,3 +2,13 @@
 
 # Write a program here that creates two Money objects, prints them,
 # then adds them together and prints their sum
+
+from money import Money
+
+
+m1 = Money(1, 99)
+m2 = Money(0, 5)
+
+print("First amount:", m1)
+print("Second amount:", m2)
+print("Total:", m1 + m2)

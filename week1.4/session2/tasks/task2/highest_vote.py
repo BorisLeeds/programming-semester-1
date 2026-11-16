@@ -20,7 +20,15 @@ def most_frequent_string(votes):
     # Your task is to complete the body of the function based on the details in the docstring.
     # Hint 1: You can complete this task with for loops or comprehensions 
     # Hint 2: Think about the properties of the various collection-types
+    counts = {}
+    for vote in votes:
+        counts[vote] = counts.get(vote, 0) + 1
 
+    max_count = max(counts.values())
+    winners = [item for item, count in counts.items() if count == max_count]
+    if len(winners) == 1:
+        return winners[0], max_count
+    return winners, max_count
 
 fruit = ['date', 'apple', 'cherry', 'date', 'apple', 'apple', 'elderberry',
          'date', 'elderberry', 'elderberry', 'date', 'banana']
